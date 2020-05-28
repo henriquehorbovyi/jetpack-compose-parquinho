@@ -6,7 +6,7 @@
 
 
 
-# O que é o JetPack Compose? :think:
+# O que é o JetPack Compose? :thinking:
 
    *"O Jetpack Compose é um kit de ferramentas moderno para a criação de UI nativa do Android. O Jetpack Compose simplifica e acelera o desenvolvimento da interface do usuário no Android com menos código, ferramentas poderosas e APIs intuitivas em Kotlin."*
 
