@@ -2,11 +2,17 @@
 
 # Jetpack Compose Parkinho
 
-O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose](https://developer.android.com/jetpack/compose) totalmete em Português(BR)  :brazil:, ajudando a disseminar o conhecimento entre a comunidade Brasileira.  
+    O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose](https://developer.android.com/jetpack/compose) totalmete em Português(BR)  :brazil:, ajudando a disseminar o conhecimento entre a comunidade Brasileira.  
 
 
 
-# Como começar com Compose?
+# O que é o JetPack Compose? :think:
+
+   *"O Jetpack Compose é um kit de ferramentas moderno para a criação de UI nativa do Android. O Jetpack Compose simplifica e acelera o desenvolvimento da interface do usuário no Android com menos código, ferramentas poderosas e APIs intuitivas em Kotlin."*
+
+
+
+# Como começar? :rocket:
 
 1. É necessário estar utilizando o [Android Studio 4.1+ Canário](https://developer.android.com/studio/preview)
 
@@ -24,8 +30,6 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
        kotlinCompilerExtensionVersion composeVersion // para versões >= '0.1.0-dev10' 
    }
    ```
-   
-     
 
 # Componentes
 
