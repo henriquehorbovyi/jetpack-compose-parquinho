@@ -1,4 +1,4 @@
-package io.henrikhorbovyi.jetpackcomposeparkinho.lists
+package io.henrikhorbovyi.jetpackcomposeparkinho
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -13,19 +13,19 @@ import androidx.ui.material.ListItem
 import androidx.ui.material.MaterialTheme
 import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.dp
-import io.henrikhorbovyi.jetpackcomposeparkinho.Sample
-import io.henrikhorbovyi.jetpackcomposeparkinho.TitleStyle
-import io.henrikhorbovyi.jetpackcomposeparkinho.floatingactionbutton.FloatingActionButtonActivity
-import io.henrikhorbovyi.jetpackcomposeparkinho.launchActivity
-import io.henrikhorbovyi.jetpackcomposeparkinho.layouts.RowAndColumnActivity
+import io.henrikhorbovyi.jetpackcomposeparkinho.layout.ColumnActivity
+import io.henrikhorbovyi.jetpackcomposeparkinho.layout.RowActicity
+import io.henrikhorbovyi.jetpackcomposeparkinho.material.FloatingActionButtonActivity
 
-class SampleListActivity : AppCompatActivity() {
+class SampleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             MaterialTheme {
-                SampleListView { launchActivity(it.clazz) }
+                SampleListView(onSampleClicked = {
+                    launchActivity(it.clazz)
+                })
             }
         }
     }
@@ -34,11 +34,12 @@ class SampleListActivity : AppCompatActivity() {
 @Composable
 fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
     val samples = listOf(
-        Sample(name = "Row and Column", clazz = RowAndColumnActivity::class),
+        Sample(name = "Row", clazz = RowActicity::class),
+        Sample(name = "Column", clazz = ColumnActivity::class),
         Sample(name = "Floating Action Button", clazz = FloatingActionButtonActivity::class)
     )
     Column {
-        Text("Sample List", style = TitleStyle(), modifier = Modifier.padding(16.dp))
+        Text("Lista de Exemplos", style = TitleStyle(), modifier = Modifier.padding(16.dp))
         AdapterList(data = samples) { sample ->
             ListItem(onClick = {
                 onSampleClicked(sample)

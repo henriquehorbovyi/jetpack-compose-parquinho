@@ -17,6 +17,9 @@
     <style name="Theme.JetpackComposeParkinho.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="M">true</item>
+        <item name="android:statusBarColor">@color/white</item>
     </style>
 
     <style name="Theme.JetpackComposeParkinho.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

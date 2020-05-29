@@ -1,7 +1,6 @@
-package io.henrikhorbovyi.jetpackcomposeparkinho.floatingactionbutton
+package io.henrikhorbovyi.jetpackcomposeparkinho.material
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.Composable
 import androidx.ui.core.setContent
@@ -13,6 +12,7 @@ import androidx.ui.material.Scaffold
 import androidx.ui.text.TextStyle
 import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.sp
+import io.henrikhorbovyi.jetpackcomposeparkinho.toast
 
 class FloatingActionButtonActivity : AppCompatActivity() {
 
@@ -20,17 +20,25 @@ class FloatingActionButtonActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MaterialTheme {
-                FloatingActionButtonSample()
+                FloatingActionButtonSample(
+                    onFabClicked = {
+                        toast("Botão clicado")
+                    })
             }
         }
     }
 }
 
 @Composable
-fun FloatingActionButtonSample() {
+fun FloatingActionButtonSample(onFabClicked: () -> Unit = {}) {
     Scaffold(floatingActionButton = {
-        FloatingActionButton(onClick = { Log.i("FAB_PRESSED", "\\o/") }) { FabIcon() }
-    }) { /*  Modifier Scope*/ }
+        FloatingActionButton(
+            onClick = { onFabClicked() },
+            icon = { FabIcon() }
+        )
+    }) {
+        /* Scaffold Modifier Scope */
+    }
 }
 
 @Composable

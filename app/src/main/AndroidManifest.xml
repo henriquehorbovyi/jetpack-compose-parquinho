@@ -8,17 +8,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.JetpackComposeParkinho">
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.JetpackComposeParkinho.NoActionBar">
+        android:theme="@style/Theme.JetpackComposeParkinho.NoActionBar">
+        <activity android:name=".SampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".layout.RowActicity"/>
+        <activity android:name=".layout.ColumnActivity"/>
+        <activity android:name=".material.FloatingActionButtonActivity"/>
     </application>
 
 </manifest>
