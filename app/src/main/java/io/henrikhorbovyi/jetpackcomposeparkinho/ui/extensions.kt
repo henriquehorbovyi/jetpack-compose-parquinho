@@ -1,4 +1,4 @@
-package io.henrikhorbovyi.jetpackcomposeparkinho
+package io.henrikhorbovyi.jetpackcomposeparkinho.ui
 
 import android.content.Context
 import android.content.Intent

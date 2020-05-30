@@ -1,4 +1,4 @@
-package io.henrikhorbovyi.jetpackcomposeparkinho
+package io.henrikhorbovyi.jetpackcomposeparkinho.ui
 
 import androidx.compose.Composable
 import androidx.compose.emptyContent

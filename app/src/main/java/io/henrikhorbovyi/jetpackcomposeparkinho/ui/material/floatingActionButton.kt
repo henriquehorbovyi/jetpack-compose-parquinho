@@ -1,4 +1,4 @@
-package io.henrikhorbovyi.jetpackcomposeparkinho.material
+package io.henrikhorbovyi.jetpackcomposeparkinho.ui.material
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -12,7 +12,7 @@ import androidx.ui.material.Scaffold
 import androidx.ui.text.TextStyle
 import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.sp
-import io.henrikhorbovyi.jetpackcomposeparkinho.toast
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.toast
 
 class FloatingActionButtonActivity : AppCompatActivity() {
 

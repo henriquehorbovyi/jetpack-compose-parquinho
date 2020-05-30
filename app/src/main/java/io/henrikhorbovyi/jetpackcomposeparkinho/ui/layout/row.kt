@@ -1,4 +1,4 @@
-package io.henrikhorbovyi.jetpackcomposeparkinho.layout
+package io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -1,4 +1,4 @@
-package io.henrikhorbovyi.jetpackcomposeparkinho
+package io.henrikhorbovyi.jetpackcomposeparkinho.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -13,9 +13,10 @@ import androidx.ui.material.ListItem
 import androidx.ui.material.MaterialTheme
 import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.dp
-import io.henrikhorbovyi.jetpackcomposeparkinho.layout.ColumnActivity
-import io.henrikhorbovyi.jetpackcomposeparkinho.layout.RowActicity
-import io.henrikhorbovyi.jetpackcomposeparkinho.material.FloatingActionButtonActivity
+import io.henrikhorbovyi.jetpackcomposeparkinho.data.Sample
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActicity
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.FloatingActionButtonActivity
 
 class SampleActivity : AppCompatActivity() {
 
@@ -23,9 +24,10 @@ class SampleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MaterialTheme {
-                SampleListView(onSampleClicked = {
-                    launchActivity(it.clazz)
-                })
+                SampleListView(
+                    onSampleClicked = {
+                        launchActivity(it.clazz)
+                    })
             }
         }
     }
@@ -34,9 +36,18 @@ class SampleActivity : AppCompatActivity() {
 @Composable
 fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
     val samples = listOf(
-        Sample(name = "Row", clazz = RowActicity::class),
-        Sample(name = "Column", clazz = ColumnActivity::class),
-        Sample(name = "Floating Action Button", clazz = FloatingActionButtonActivity::class)
+        Sample(
+            name = "Row",
+            clazz = RowActicity::class
+        ),
+        Sample(
+            name = "Column",
+            clazz = ColumnActivity::class
+        ),
+        Sample(
+            name = "Floating Action Button",
+            clazz = FloatingActionButtonActivity::class
+        )
     )
     Column {
         Text("Lista de Exemplos", style = TitleStyle(), modifier = Modifier.padding(16.dp))
