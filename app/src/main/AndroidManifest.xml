@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JetpackComposeParkinho.NoActionBar">
-        <activity android:name=".ui.SampleActivity">
+        <activity android:name=".ui.SamplesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +19,7 @@
 
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.BoxActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.TextActivity"/>
-        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActicity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.FloatingActionButtonActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SnackBarActivity"/>

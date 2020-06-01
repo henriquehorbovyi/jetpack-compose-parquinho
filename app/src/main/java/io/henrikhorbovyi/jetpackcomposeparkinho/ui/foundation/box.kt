@@ -1,10 +1,7 @@
 package io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.Composable
 import androidx.ui.core.Modifier
-import androidx.ui.core.setContent
 import androidx.ui.foundation.Border
 import androidx.ui.foundation.Box
 import androidx.ui.foundation.ContentGravity
@@ -12,19 +9,21 @@ import androidx.ui.foundation.Text
 import androidx.ui.foundation.shape.corner.RoundedCornerShape
 import androidx.ui.graphics.Color
 import androidx.ui.layout.*
-import androidx.ui.material.MaterialTheme
 import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.dp
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.SampleActivity
 
-class BoxActivity : AppCompatActivity() {
+class BoxActivity : SampleActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            MaterialTheme {
-                BoxSample()
-            }
-        }
+    @Composable
+    override fun Sample() {
+        BoxSample()
+    }
+
+    @Composable
+    @Preview("boxPreview", showDecoration = true)
+    override fun preview() {
+        BoxSample()
     }
 }
 
@@ -50,10 +49,4 @@ fun BoxSample() {
             Text("Eu tbm! :)", color = Color.White)
         }
     }
-}
-
-@Composable
-@Preview("boxPreview", showDecoration = true)
-fun boxPreview() {
-    BoxSample()
 }

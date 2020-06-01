@@ -1,25 +1,24 @@
 package io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.Composable
 import androidx.ui.core.Modifier
-import androidx.ui.core.setContent
 import androidx.ui.foundation.Text
 import androidx.ui.layout.Arrangement
 import androidx.ui.layout.Row
 import androidx.ui.layout.fillMaxWidth
-import androidx.ui.material.MaterialTheme
 import androidx.ui.tooling.preview.Preview
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.SampleActivity
 
-class RowActicity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            MaterialTheme {
-                RowSample()
-            }
-        }
+class RowActivity : SampleActivity() {
+    @Composable
+    override fun Sample() {
+        RowSample()
+    }
+
+    @Composable
+    @Preview("rowPreview", showDecoration = true)
+    override fun preview() {
+        RowSample()
     }
 }
 
@@ -37,11 +36,4 @@ fun RowSample() {
             Text("Item $index")
         }
     }
-}
-
-
-@Composable
-@Preview("rowPreview", showDecoration = true)
-fun rowPreview() {
-    RowSample()
 }

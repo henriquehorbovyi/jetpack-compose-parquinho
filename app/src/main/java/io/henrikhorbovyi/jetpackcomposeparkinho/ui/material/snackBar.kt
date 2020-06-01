@@ -1,11 +1,8 @@
 package io.henrikhorbovyi.jetpackcomposeparkinho.ui.material
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.Composable
 import androidx.ui.core.Alignment
 import androidx.ui.core.Modifier
-import androidx.ui.core.setContent
 import androidx.ui.foundation.Text
 import androidx.ui.foundation.clickable
 import androidx.ui.graphics.Color
@@ -13,37 +10,40 @@ import androidx.ui.layout.Arrangement
 import androidx.ui.layout.Column
 import androidx.ui.layout.fillMaxSize
 import androidx.ui.layout.padding
-import androidx.ui.material.MaterialTheme
 import androidx.ui.material.Snackbar
 import androidx.ui.text.TextStyle
 import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.dp
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.SampleActivity
 
-class SnackBarActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            MaterialTheme {
-                SnackBarDemo()
-            }
-        }
-    }
-}
+class SnackBarActivity : SampleActivity() {
 
-@Composable
-fun SnackBarDemo() {
-    Column(
-        modifier = Modifier.fillMaxSize().padding(16.dp),
-        verticalArrangement = Arrangement.SpaceEvenly,
-        horizontalGravity = Alignment.CenterHorizontally
-    ) {
+    @Composable
+    override fun Sample() {
         SnackBarSample()
-        SnackBarWithAction()
+    }
+
+    @Composable
+    @Preview("snackBarsPreview", showDecoration = true)
+    override fun preview() {
+        SnackBarSample()
     }
 }
 
 @Composable
 fun SnackBarSample() {
+    Column(
+        modifier = Modifier.fillMaxSize().padding(16.dp),
+        verticalArrangement = Arrangement.SpaceEvenly,
+        horizontalGravity = Alignment.CenterHorizontally
+    ) {
+        SimpleSnackBar()
+        SnackBarWithAction()
+    }
+}
+
+@Composable
+fun SimpleSnackBar() {
     Snackbar({ Text(text = "Olá, tudo bem?") })
 }
 
@@ -58,10 +58,4 @@ fun SnackBarWithAction() {
             })
         )
     })
-}
-
-@Composable
-@Preview("snackBarsPreview", showDecoration = true)
-fun SnackBarPreview() {
-    SnackBarDemo()
 }

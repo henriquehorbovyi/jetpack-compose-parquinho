@@ -17,11 +17,11 @@ import io.henrikhorbovyi.jetpackcomposeparkinho.data.Sample
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.BoxActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.TextActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity
-import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActicity
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.FloatingActionButtonActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SnackBarActivity
 
-class SampleActivity : AppCompatActivity() {
+class SamplesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,7 +49,7 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
         ),
         Sample(
             name = "Row",
-            clazz = RowActicity::class
+            clazz = RowActivity::class
         ),
         Sample(
             name = "Column",

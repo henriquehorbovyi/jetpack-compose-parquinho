@@ -1,33 +1,32 @@
 package io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.Composable
 import androidx.ui.core.Modifier
-import androidx.ui.core.setContent
 import androidx.ui.foundation.Text
 import androidx.ui.graphics.Color
 import androidx.ui.layout.Arrangement
 import androidx.ui.layout.Column
 import androidx.ui.layout.fillMaxHeight
 import androidx.ui.layout.padding
-import androidx.ui.material.MaterialTheme
 import androidx.ui.text.TextStyle
 import androidx.ui.text.font.FontStyle
 import androidx.ui.text.font.FontWeight
 import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.dp
 import androidx.ui.unit.sp
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.SampleActivity
 
-class TextActivity : AppCompatActivity() {
-    
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent { 
-            MaterialTheme {
-              TextSamples()
-            }
-        }
+class TextActivity : SampleActivity() {
+
+    @Composable
+    override fun Sample() {
+        TextSamples()
+    }
+
+    @Composable
+    @Preview("textPreview", showDecoration = true)
+    override fun preview() {
+        TextSamples()
     }
 }
 
@@ -57,10 +56,4 @@ fun TextSamples() {
             )
         )
     }
-}
-
-@Composable
-@Preview("textSamplesPreview", showDecoration = true)
-fun textSamplesPreview() {
-    TextSamples()
 }
