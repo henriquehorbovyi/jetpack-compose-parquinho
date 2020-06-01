@@ -14,6 +14,7 @@ import androidx.ui.material.MaterialTheme
 import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.dp
 import io.henrikhorbovyi.jetpackcomposeparkinho.data.Sample
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.TextActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActicity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.FloatingActionButtonActivity
@@ -37,6 +38,10 @@ class SampleActivity : AppCompatActivity() {
 @Composable
 fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
     val samples = listOf(
+        Sample(
+            name = "Text",
+            clazz = TextActivity::class
+        ),
         Sample(
             name = "Row",
             clazz = RowActicity::class
