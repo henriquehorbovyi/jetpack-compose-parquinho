@@ -17,6 +17,7 @@ import io.henrikhorbovyi.jetpackcomposeparkinho.data.Sample
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActicity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.FloatingActionButtonActivity
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SnackBarActivity
 
 class SampleActivity : AppCompatActivity() {
 
@@ -47,6 +48,10 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
         Sample(
             name = "Floating Action Button",
             clazz = FloatingActionButtonActivity::class
+        ),
+        Sample(
+            name = "SnackBar",
+            clazz = SnackBarActivity::class
         )
     )
     Column {

@@ -20,6 +20,7 @@
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActicity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.FloatingActionButtonActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SnackBarActivity"/>
     </application>
 
 </manifest>
