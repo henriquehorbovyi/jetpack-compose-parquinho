@@ -6,7 +6,6 @@ import androidx.compose.Composable
 import androidx.ui.core.Modifier
 import androidx.ui.core.setContent
 import androidx.ui.foundation.Text
-import androidx.ui.foundation.currentTextStyle
 import androidx.ui.graphics.Color
 import androidx.ui.layout.Arrangement
 import androidx.ui.layout.Column
@@ -26,7 +25,7 @@ class TextActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent { 
             MaterialTheme {
-                
+              TextSamples()
             }
         }
     }
@@ -53,7 +52,8 @@ fun TextSamples() {
                 fontSize = 22.sp,
                 fontWeight = FontWeight(800),
                 color = Color(0xffdddd77),
-                background = Color.Black
+                background = Color.Black,
+                fontStyle = FontStyle.Italic
             )
         )
     }
