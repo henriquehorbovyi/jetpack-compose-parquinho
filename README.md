@@ -4,13 +4,9 @@
 
     O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose](https://developer.android.com/jetpack/compose) totalmete em Português(BR)  :brazil:, ajudando a disseminar o conhecimento entre a comunidade Brasileira.  
 
-
-
 # O que é o JetPack Compose? :thinking:
 
    *"O Jetpack Compose é um kit de ferramentas moderno para a criação de UI nativa do Android. O Jetpack Compose simplifica e acelera o desenvolvimento da interface do usuário no Android com menos código, ferramentas poderosas e APIs intuitivas em Kotlin."*
-
-
 
 # Como começar? :rocket:
 
@@ -33,13 +29,15 @@
 
 # Componentes
 
-- Text
+## [Fundação](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/foundation)
 
-- Box
+- [Text](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/foundation/text.kt)
 
-- Row
+## [Layout](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout)
 
-- Column
+- [Row](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout/row.kt)
+
+- [Column](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout/column.kt)
 
 - Stack
 
@@ -47,9 +45,13 @@
 
 - VerticalScroller
 
+
+
+## [Material](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material)
+
 - Scaffold
 
-- Floating Action Button
+- [Floating Action Button](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/floatingActionButton.kt)
 
 - Bottom Navigation Bar
 
