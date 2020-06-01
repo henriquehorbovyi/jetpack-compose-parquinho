@@ -14,6 +14,7 @@ import androidx.ui.material.MaterialTheme
 import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.dp
 import io.henrikhorbovyi.jetpackcomposeparkinho.data.Sample
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.BoxActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.TextActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActicity
@@ -41,6 +42,10 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
         Sample(
             name = "Text",
             clazz = TextActivity::class
+        ),
+        Sample(
+            name = "Box",
+            clazz = BoxActivity::class
         ),
         Sample(
             name = "Row",
