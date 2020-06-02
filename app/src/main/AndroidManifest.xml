@@ -23,6 +23,7 @@
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.AlertDialogActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.BottomAppBarActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.BottomNavigationActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.FloatingActionButtonActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SnackBarActivity"/>
     </application>

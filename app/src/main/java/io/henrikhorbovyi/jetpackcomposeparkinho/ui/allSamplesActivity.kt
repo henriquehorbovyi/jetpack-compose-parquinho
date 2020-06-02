@@ -18,10 +18,7 @@ import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.BoxActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.TextActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActivity
-import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.AlertDialogActivity
-import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.BottomAppBarActivity
-import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.FloatingActionButtonActivity
-import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SnackBarActivity
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.*
 
 class SamplesActivity : AppCompatActivity() {
 
@@ -64,6 +61,10 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
         Sample(
             name = "Bottom App Bar",
             clazz = BottomAppBarActivity::class
+        ),
+        Sample(
+            name = "Bottom Navigation",
+            clazz = BottomNavigationActivity::class
         ),
         Sample(
             name = "Floating Action Button",
