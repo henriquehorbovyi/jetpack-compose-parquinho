@@ -2,6 +2,7 @@ package io.henrikhorbovyi.jetpackcomposeparkinho.ui.material
 
 import androidx.compose.Composable
 import androidx.compose.state
+import androidx.ui.core.Alignment
 import androidx.ui.core.Modifier
 import androidx.ui.foundation.ContentGravity
 import androidx.ui.foundation.Text
@@ -54,9 +55,9 @@ fun AlertSample() {
         )
     }
     Column(
-        modifier = Modifier.fillMaxHeight().fillMaxWidth(),
+        modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
-        horizontalGravity = ContentGravity.CenterHorizontally
+        horizontalGravity = Alignment.CenterHorizontally
     ) {
         Button(onClick = { alertIsVisible.value = true }) {
             Text("Mostrar alerta")

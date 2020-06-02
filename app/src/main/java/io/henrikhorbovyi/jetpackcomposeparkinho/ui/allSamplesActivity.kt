@@ -19,6 +19,7 @@ import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.TextActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.AlertDialogActivity
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.BottomAppBarActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.FloatingActionButtonActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SnackBarActivity
 
@@ -59,6 +60,10 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
         Sample(
             name = "Alert Dialog",
             clazz = AlertDialogActivity::class
+        ),
+        Sample(
+            name = "Bottom App Bar",
+            clazz = BottomAppBarActivity::class
         ),
         Sample(
             name = "Floating Action Button",
