@@ -47,17 +47,20 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 - VerticalScroller
 
-
-
 ## [Material](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material)
 
 - [AlertDialog](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/alertDialog.kt)
 
 - [Bottom App Bar](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/bottomAppBar.kt)
+
 - [Bottom Navigation](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/bottomNavigation.kt)
+
 - Button
+
 - Card
+
 - Checkbox
+
 - Divider
 
 - [Floating Action Button](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/floatingActionButton.kt)
@@ -65,3 +68,19 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 - Scaffold
 
 - Toolbar
+
+
+
+# Outras Referências
+
+## Artigos
+
+- [ Jetpack Compose: o framework de UI do Android para os próximos 10 anos](https://medium.com/@nglauber/jetpack-compose-o-framework-de-ui-do-android-para-os-pr%C3%B3ximos-10-anos-e19adf28e57e) **por [nglauber](https://github.com/nglauber)**
+
+- [Jetpack Compose Part II: async data, tabs, scroller, fab, state, …](https://medium.com/@nglauber/jetpack-compose-part-ii-async-data-tabs-scroller-fab-state-efc8e267b914) **por [nglauber](https://github.com/nglauber)**
+
+
+
+## Vídeos
+
+In progress...  
