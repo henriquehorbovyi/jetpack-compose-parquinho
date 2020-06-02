@@ -54,13 +54,11 @@
 - [AlertDialog](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/alertDialog.kt)
 
 - [Bottom App Bar](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/bottomAppBar.kt)
-- Bottom Navigation
+- [Bottom Navigation](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/bottomNavigation.kt)
 - Button
 - Card
 - Checkbox
 - Divider
-
-- Bottom Navigation Bar
 
 - [Floating Action Button](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/floatingActionButton.kt)
 
