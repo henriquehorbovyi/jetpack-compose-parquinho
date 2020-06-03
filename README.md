@@ -67,9 +67,7 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 - Scaffold
 
-- Toolbar
-
-
+- [Toolbar](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/toolbar.kt)
 
 # Outras Referências
 
@@ -78,8 +76,6 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 - [ Jetpack Compose: o framework de UI do Android para os próximos 10 anos](https://medium.com/@nglauber/jetpack-compose-o-framework-de-ui-do-android-para-os-pr%C3%B3ximos-10-anos-e19adf28e57e) **por [nglauber](https://github.com/nglauber)**
 
 - [Jetpack Compose Part II: async data, tabs, scroller, fab, state, …](https://medium.com/@nglauber/jetpack-compose-part-ii-async-data-tabs-scroller-fab-state-efc8e267b914) **por [nglauber](https://github.com/nglauber)**
-
-
 
 ## Vídeos
 
