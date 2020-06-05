@@ -5,9 +5,7 @@ import androidx.ui.core.Modifier
 import androidx.ui.foundation.Icon
 import androidx.ui.foundation.shape.corner.CircleShape
 import androidx.ui.graphics.Color
-import androidx.ui.layout.Arrangement
-import androidx.ui.layout.Row
-import androidx.ui.layout.fillMaxWidth
+import androidx.ui.layout.Spacer
 import androidx.ui.material.BottomAppBar
 import androidx.ui.material.FloatingActionButton
 import androidx.ui.material.IconButton
@@ -61,13 +59,9 @@ fun BottomAppBarSample() {
                 cutoutShape = CircleShape,
                 fabConfiguration = fabConfiguration
             ) {
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween
-                ) {
-                    IconButton(icon = { Icon(asset = Icons.Outlined.Menu) }, onClick = {})
-                    IconButton(icon = { Icon(asset = Icons.Outlined.Notifications) }, onClick = {})
-                }
+                IconButton(icon = { Icon(asset = Icons.Outlined.Menu) }, onClick = {})
+                Spacer(Modifier.weight(1f, true))
+                IconButton(icon = { Icon(asset = Icons.Outlined.Notifications) }, onClick = {})
             }
         }
     ) { /* Esse bloco é obrigatório  */ }
