@@ -26,10 +26,7 @@ class SamplesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MaterialTheme {
-                SampleListView(
-                    onSampleClicked = {
-                        launchActivity(it.clazz)
-                    })
+                SampleListView(onSampleClicked = { launchActivity(it.clazz) })
             }
         }
     }
