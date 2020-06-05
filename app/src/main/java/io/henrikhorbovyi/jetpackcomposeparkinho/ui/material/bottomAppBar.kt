@@ -1,26 +1,22 @@
 package io.henrikhorbovyi.jetpackcomposeparkinho.ui.material
 
 import androidx.compose.Composable
-import androidx.ui.core.Alignment
 import androidx.ui.core.Modifier
 import androidx.ui.foundation.Icon
-import androidx.ui.foundation.Text
 import androidx.ui.foundation.shape.corner.CircleShape
 import androidx.ui.graphics.Color
-import androidx.ui.graphics.vector.VectorPainter
-import androidx.ui.layout.*
+import androidx.ui.layout.Arrangement
+import androidx.ui.layout.Row
+import androidx.ui.layout.fillMaxWidth
 import androidx.ui.material.BottomAppBar
-import androidx.ui.material.Button
 import androidx.ui.material.FloatingActionButton
+import androidx.ui.material.IconButton
 import androidx.ui.material.Scaffold
 import androidx.ui.material.icons.Icons
-import androidx.ui.material.icons.outlined.Add
+import androidx.ui.material.icons.outlined.Check
 import androidx.ui.material.icons.outlined.Menu
+import androidx.ui.material.icons.outlined.Notifications
 import androidx.ui.tooling.preview.Preview
-import androidx.ui.unit.IntPxSize
-import androidx.ui.unit.dp
-import androidx.ui.unit.ipx
-import androidx.ui.unit.px
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.SampleActivity
 
 class BottomAppBarActivity : SampleActivity() {
@@ -40,19 +36,39 @@ class BottomAppBarActivity : SampleActivity() {
 @Composable
 fun BottomAppBarSample() {
     Scaffold(
-        bottomAppBar = {
-            BottomAppBar(
-                contentColor = Color.White,
-                backgroundColor = Color.Black
-            ) {}
-        },
+        floatingActionButtonPosition = Scaffold.FabPosition.CenterDocked,
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {},
-                icon = { Icon(painter = VectorPainter(asset = Icons.Outlined.Add), tint = Color.White) }
+                icon = { Icon(asset = Icons.Outlined.Check, tint = Color.White) }
             )
         },
-        floatingActionButtonPosition = Scaffold.FabPosition.CenterDocked,
-        bodyContent = {}
-    )
+
+
+        /**
+         * Ao atribuirmos o [fabConfiguration] do Scaffold ao nosso BottomAppBar
+         * ganhamos a propriedade [floatingActionButtonPosition] que foi inicializada
+         * como [Scaffold.FabPosition.CenterDocked]
+         *
+         * Tente remover o [fabConfiguration] do BottomAppBar e executar o app novamente,
+         * você vai notar uma diferença de "margin" ao redor do FloatingActionButton.
+         *
+         * OBS: Talvez você a previsualização do Android Studio não mostre essa diferença
+         * */
+
+        bottomAppBar = { fabConfiguration ->
+            BottomAppBar(
+                cutoutShape = CircleShape,
+                fabConfiguration = fabConfiguration
+            ) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+                    IconButton(icon = { Icon(asset = Icons.Outlined.Menu) }, onClick = {})
+                    IconButton(icon = { Icon(asset = Icons.Outlined.Notifications) }, onClick = {})
+                }
+            }
+        }
+    ) { /* Esse bloco é obrigatório  */ }
 }
