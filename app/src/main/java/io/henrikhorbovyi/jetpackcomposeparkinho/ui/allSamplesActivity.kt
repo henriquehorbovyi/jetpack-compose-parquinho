@@ -67,6 +67,10 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
             clazz = BottomNavigationActivity::class
         ),
         Sample(
+            name = "Button",
+            clazz = ButtonActivity::class
+        ),
+        Sample(
             name = "Floating Action Button",
             clazz = FloatingActionButtonActivity::class
         ),
