@@ -14,22 +14,22 @@ import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.dp
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.SampleActivity
 
-class ToolbarActivity : SampleActivity() {
+class TopAppBarActivity : SampleActivity() {
 
     @Composable
     override fun Sample() {
-        SimpleToolbarSample()
+        SimpleTopAppBarSample()
     }
 
     @Composable
-    @Preview("toolbarPreview", showDecoration = true)
+    @Preview("topAppBarPreview", showDecoration = true)
     override fun preview() {
-        SimpleToolbarSample()
+        SimpleTopAppBarSample()
     }
 }
 
 @Composable
-fun SimpleToolbarSample() {
+fun SimpleTopAppBarSample() {
     Scaffold(
         topAppBar = {
             TopAppBar(

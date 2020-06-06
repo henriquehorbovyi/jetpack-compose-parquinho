@@ -68,12 +68,28 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
             clazz = ButtonActivity::class
         ),
         Sample(
+            name = "Card",
+            clazz = CardActivity::class
+        ),
+        Sample(
+            name = "CheckBox",
+            clazz = CheckBoxActivity::class
+        ),
+        Sample(
             name = "Floating Action Button",
             clazz = FloatingActionButtonActivity::class
         ),
         Sample(
-            name = "Toolbar",
-            clazz = ToolbarActivity::class
+            name = "Progress",
+            clazz = ProgressActivity::class
+        ),
+        Sample(
+            name = "Radio Button",
+            clazz = RadioButtonActivity::class
+        ),
+        Sample(
+            name = "Top App Bar",
+            clazz = TopAppBarActivity::class
         ),
         Sample(
             name = "SnackBar",

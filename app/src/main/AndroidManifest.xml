@@ -25,8 +25,12 @@
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.BottomAppBarActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.BottomNavigationActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.ButtonActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.CardActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.CheckBoxActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.FloatingActionButtonActivity"/>
-        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.ToolbarActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.ProgressActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.RadioButtonActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.TopAppBarActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SnackBarActivity"/>
     </application>
 
