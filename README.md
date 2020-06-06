@@ -71,7 +71,13 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 - Scaffold
 
+- Slider
+
 - [Snackbar](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/snackbar.kt)
+
+- Switch
+
+- TextField
 
 - [Top App Bar](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/topAppBar.kt)
 

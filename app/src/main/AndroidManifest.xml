@@ -25,6 +25,7 @@
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.BottomAppBarActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.BottomNavigationActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.ButtonActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.DividerActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.CardActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.CheckBoxActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.FloatingActionButtonActivity"/>

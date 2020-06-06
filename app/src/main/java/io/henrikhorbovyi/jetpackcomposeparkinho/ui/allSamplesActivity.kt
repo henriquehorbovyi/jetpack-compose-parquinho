@@ -80,6 +80,10 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
             clazz = FloatingActionButtonActivity::class
         ),
         Sample(
+            name = "Divider",
+            clazz = DividerActivity::class
+        ),
+        Sample(
             name = "Progress",
             clazz = ProgressActivity::class
         ),
@@ -95,7 +99,8 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
             name = "SnackBar",
             clazz = SnackBarActivity::class
         )
-    )
+    ).sortedBy { it.name }
+
     Column {
         Text("Lista de Exemplos", style = TitleStyle(), modifier = Modifier.padding(16.dp))
         AdapterList(data = samples) { sample ->
