@@ -26,7 +26,6 @@ class ScaffoldActivity : SampleActivity() {
         ScaffoldSample()
     }
 
-
     @Composable
     @Preview("scaffoldPreview", showDecoration = true)
     override fun preview() {
@@ -88,13 +87,7 @@ fun AwesomeBottomBar() {
 
 @Composable
 fun AwesomeDrawerContent() {
-    val (drawer, onStateChanged) = state { DrawerState.Closed }
-    ModalDrawerLayout(
-        drawerState = drawer,
-        onStateChange = onStateChanged,
-        drawerContent = {},
-        bodyContent = {}
-    )
+    Text("Seu drawer aqui")
 }
 
 @Composable
