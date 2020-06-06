@@ -98,6 +98,10 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
         Sample(
             name = "SnackBar",
             clazz = SnackBarActivity::class
+        ),
+        Sample(
+            name = "Scaffold",
+            clazz = ScaffoldActivity::class
         )
     ).sortedBy { it.name }
 

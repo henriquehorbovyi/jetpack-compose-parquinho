@@ -61,7 +61,7 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 - [Checkbox](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/checkBox.kt)
 
-- Divider
+- [Divider](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/divider.kt)
 
 - [Floating Action Button](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/floatingActionButton.kt)
 
@@ -69,7 +69,7 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 - [Radio Button](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/radioButton.kt)
 
-- Scaffold
+- [Scaffold](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/scaffold.kt)
 
 - Slider
 
