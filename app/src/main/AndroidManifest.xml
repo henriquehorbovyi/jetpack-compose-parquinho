@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.animation.CrossfadeActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.BoxActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.TextActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActivity"/>

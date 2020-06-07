@@ -29,6 +29,12 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 # Componentes
 
+## [Animações](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/animation)
+
+- [Crossfade](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/animation/crossfade.kt)
+
+- Valores Animados 
+
 ## [Fundação](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/foundation)
 
 - [Text](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/foundation/text.kt)
@@ -94,10 +100,6 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 - Perform Click Gesture
 
 - Click Assertion
-
-
-
-
 
 # Outras Referências
 

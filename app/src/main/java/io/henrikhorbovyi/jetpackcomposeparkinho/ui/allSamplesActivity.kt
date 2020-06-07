@@ -14,6 +14,7 @@ import androidx.ui.material.MaterialTheme
 import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.dp
 import io.henrikhorbovyi.jetpackcomposeparkinho.data.Sample
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.animation.CrossfadeActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.BoxActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.TextActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity
@@ -35,6 +36,10 @@ class SamplesActivity : AppCompatActivity() {
 @Composable
 fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
     val samples = listOf(
+        Sample(
+            name = "Crossfade",
+            clazz = CrossfadeActivity::class
+        ),
         Sample(
             name = "Text",
             clazz = TextActivity::class
