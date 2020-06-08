@@ -105,6 +105,10 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
             clazz = SnackBarActivity::class
         ),
         Sample(
+            name = "Slider",
+            clazz = SliderActivity::class
+        ),
+        Sample(
             name = "Scaffold",
             clazz = ScaffoldActivity::class
         )
