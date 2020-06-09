@@ -95,9 +95,9 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 - String
 
-## Test
+## [Test](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho)
 
-- Perform Click Gesture
+- [Perform Click Gesture](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho/PerformClickGesture.kt)
 
 - Click Assertion
 
