@@ -35,6 +35,7 @@
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.TopAppBarActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SnackBarActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SliderActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SwitchActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.ScaffoldActivity"/>
     </application>
 

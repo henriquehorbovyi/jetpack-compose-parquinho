@@ -81,7 +81,7 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 - [Snackbar](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/snackbar.kt)
 
-- Switch
+- [Switch](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/switch.kt)
 
 - TextField
 
