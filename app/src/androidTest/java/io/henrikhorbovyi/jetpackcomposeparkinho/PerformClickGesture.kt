@@ -14,29 +14,25 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class ClickTests {
+class PerformClickGesture {
 
     @get:Rule
     val composeTestRule = createComposeRule()
 
     private fun launchContent() {
         composeTestRule.setContent {
-            MaterialTheme {
-                Surface {
-                    val selected = state { false }
-                    TestTag(tag = "checkBoxTag") {
-                        Checkbox(
-                            checked = selected.value,
-                            onCheckedChange = { selected.value = it }
-                        )
-                    }
-                }
+            val selected = state { false }
+            TestTag(tag = "checkBoxTag") {
+                Checkbox(
+                    checked = selected.value,
+                    onCheckedChange = { selected.value = it }
+                )
             }
         }
     }
 
     @Test
-    fun testClick() {
+    fun clicarNoCheckBox() {
         launchContent()
         findByTag("checkBoxTag").doClick()
     }
