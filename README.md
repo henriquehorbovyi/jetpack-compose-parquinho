@@ -1,4 +1,4 @@
-# ![](https://img.shields.io/badge/Kotlin-1.3.72-green.svg) ![](https://img.shields.io/badge/Compose-dev12-green.svg)
+# ![](https://img.shields.io/badge/Kotlin-1.3.72-green.svg) ![](https://img.shields.io/badge/Compose-dev13-green.svg)
 
 # Jetpack Compose Parkinho
 
