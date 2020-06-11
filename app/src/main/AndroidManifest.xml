@@ -33,6 +33,7 @@
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.ProgressActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.RadioButtonActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.TopAppBarActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.TextFieldActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SnackBarActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SliderActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.SwitchActivity"/>

@@ -101,6 +101,10 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
             clazz = TopAppBarActivity::class
         ),
         Sample(
+            name = "TextField",
+            clazz = TextFieldActivity::class
+        ),
+        Sample(
             name = "SnackBar",
             clazz = SnackBarActivity::class
         ),
