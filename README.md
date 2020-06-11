@@ -111,4 +111,4 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 ## Vídeos
 
-In progress...  
+- [Jetpack Compose Tutorial - O Toolkit UI Android Moderno](https://www.youtube.com/watch?v=ueqVGkMMhIY) **por [tiago-aguiar](https://github.com/tiago-aguiar)**
