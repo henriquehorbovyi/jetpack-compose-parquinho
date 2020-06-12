@@ -5,6 +5,7 @@ import androidx.ui.core.Alignment
 import androidx.ui.core.Modifier
 import androidx.ui.layout.Arrangement
 import androidx.ui.layout.Column
+import androidx.ui.layout.fillMaxSize
 import androidx.ui.text.TextStyle
 import androidx.ui.text.font.FontWeight
 import androidx.ui.unit.sp
@@ -16,7 +17,7 @@ fun TitleStyle(): TextStyle = TextStyle(fontSize = 26.sp, fontWeight = FontWeigh
 @Composable
 fun Center(modifier: Modifier = Modifier, children: @Composable() () -> Unit) {
     Column(
-        modifier = modifier,
+        modifier = modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalGravity = Alignment.CenterHorizontally
     ) { children() }

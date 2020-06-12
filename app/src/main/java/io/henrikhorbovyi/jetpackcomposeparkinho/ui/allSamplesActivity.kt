@@ -19,6 +19,7 @@ import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.BoxActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.TextActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActivity
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.StackActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.*
 
 class SamplesActivity : AppCompatActivity() {
@@ -111,6 +112,10 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
         Sample(
             name = "Switch",
             clazz = SwitchActivity::class
+        ),
+        Sample(
+            name = "Stack",
+            clazz = StackActivity::class
         ),
         Sample(
             name = "Slider",
