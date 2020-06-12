@@ -38,7 +38,7 @@ class TextFieldActivity : SampleActivity() {
 @Composable
 fun TextFieldSamples() {
 
-    Center(modifier = Modifier.fillMaxSize()) {
+    Center {
         SimpleTextField()
         FilledTextFieldSample()
     }

@@ -4,9 +4,9 @@ import androidx.compose.*
 import androidx.ui.core.Modifier
 import androidx.ui.foundation.Text
 import androidx.ui.layout.Spacer
-import androidx.ui.layout.fillMaxSize
 import androidx.ui.layout.height
 import androidx.ui.material.Switch
+import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.dp
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.Center
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.SampleActivity
@@ -18,8 +18,8 @@ class SwitchActivity : SampleActivity() {
         SwitchSamples()
     }
 
-
     @Composable
+    @Preview("switchPreview", showDecoration = true)
     override fun preview() {
         SwitchSamples()
     }
@@ -27,10 +27,10 @@ class SwitchActivity : SampleActivity() {
 
 @Composable
 fun SwitchSamples() {
-    Center(modifier = Modifier.fillMaxSize()) {
+    Center {
         SimpleSwitch()
         Spacer(modifier = Modifier.height(16.dp))
-        UnabledSwitch()
+        DisabledSwitch()
     }
 }
 
@@ -44,7 +44,7 @@ fun SimpleSwitch() {
 
 
 @Composable
-fun UnabledSwitch() {
+fun DisabledSwitch() {
     Text(text = "Essa funcionalidade está desabilitada...")
     Switch(
         checked = false,
