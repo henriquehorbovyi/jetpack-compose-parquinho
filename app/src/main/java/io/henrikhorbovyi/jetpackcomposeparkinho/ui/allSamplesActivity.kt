@@ -18,6 +18,7 @@ import io.henrikhorbovyi.jetpackcomposeparkinho.ui.animation.CrossfadeActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.BoxActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.TextActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.HorizontalScrollerActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.StackActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.*
@@ -88,6 +89,10 @@ fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
         Sample(
             name = "Divider",
             clazz = DividerActivity::class
+        ),
+        Sample(
+            name = "Horizontal Scroller",
+            clazz = HorizontalScrollerActivity::class
         ),
         Sample(
             name = "Progress",
