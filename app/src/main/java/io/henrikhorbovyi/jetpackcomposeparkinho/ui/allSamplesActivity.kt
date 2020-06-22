@@ -19,6 +19,9 @@ import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.BoxActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.TextActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.*
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.*
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.resources.ColorsActivity
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.resources.DrawablesActivity
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.resources.StringsActivity
 
 class SamplesActivity : AppCompatActivity() {
 
@@ -35,6 +38,18 @@ class SamplesActivity : AppCompatActivity() {
 @Composable
 fun SampleListView(onSampleClicked: (Sample) -> Unit = {}) {
     val samples = listOf(
+        Sample(
+            name = "Colors",
+            clazz = ColorsActivity::class
+        ),
+        Sample(
+            name = "Strings",
+            clazz = StringsActivity::class
+        ),
+        Sample(
+            name = "Drawables",
+            clazz = DrawablesActivity::class
+        ),
         Sample(
             name = "Crossfade",
             clazz = CrossfadeActivity::class
