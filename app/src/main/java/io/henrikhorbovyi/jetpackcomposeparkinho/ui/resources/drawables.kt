@@ -35,7 +35,7 @@ class DrawablesActivity : SampleActivity() {
 fun DrawablesSample() {
     Center {
         Image(
-            asset = vectorResource(id = R.drawable.ic_android),
+            asset = vectorResource(id = R.drawable.ic_android).copy(defaultHeight = 64.dp, defaultWidth = 64.dp),
             colorFilter = ColorFilter.tint(Color.Red)
         )
     }
