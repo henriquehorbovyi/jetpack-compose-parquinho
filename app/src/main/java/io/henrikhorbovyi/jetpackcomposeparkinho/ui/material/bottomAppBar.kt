@@ -34,7 +34,7 @@ class BottomAppBarActivity : SampleActivity() {
 @Composable
 fun BottomAppBarSample() {
     Scaffold(
-        floatingActionButtonPosition = Scaffold.FabPosition.CenterDocked,
+        floatingActionButtonPosition = Scaffold.FabPosition.Center,
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {},
@@ -54,10 +54,9 @@ fun BottomAppBarSample() {
          * OBS: Talvez você a previsualização do Android Studio não mostre essa diferença
          * */
 
-        bottomAppBar = { fabConfiguration ->
+        bottomBar = {
             BottomAppBar(
-                cutoutShape = CircleShape,
-                fabConfiguration = fabConfiguration
+                cutoutShape = CircleShape
             ) {
                 IconButton(icon = { Icon(asset = Icons.Outlined.Menu) }, onClick = {})
                 Spacer(Modifier.weight(1f, true))

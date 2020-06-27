@@ -3,7 +3,7 @@ package io.henrikhorbovyi.jetpackcomposeparkinho.ui
 import androidx.compose.Composable
 import androidx.ui.core.Alignment
 import androidx.ui.core.Modifier
-import androidx.ui.foundation.AdapterList
+import androidx.ui.foundation.lazy.LazyColumnItems
 import androidx.ui.layout.Arrangement
 import androidx.ui.layout.Column
 import androidx.ui.layout.fillMaxSize
@@ -30,8 +30,8 @@ fun Center(modifier: Modifier = Modifier, children: @Composable() () -> Unit) {
 
 @Composable
 fun SamplesView(samples: List<Sample>, onSampleClicked: (Sample) -> Unit = {}) {
-    AdapterList(
-        data = samples.sortedBy { it.name },
-        itemCallback = { ListItem(text = it.name, onClick = { onSampleClicked(it) }) }
+    LazyColumnItems(
+        items = samples.sortedBy { it.name },
+        itemContent = { ListItem(text = it.name, onClick = { onSampleClicked(it) }) }
     )
 }

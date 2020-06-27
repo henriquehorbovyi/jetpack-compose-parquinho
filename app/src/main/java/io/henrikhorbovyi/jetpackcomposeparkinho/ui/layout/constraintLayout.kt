@@ -1,9 +1,7 @@
 package io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout
 
 import androidx.compose.Composable
-import androidx.ui.core.Constraints2
 import androidx.ui.core.Modifier
-import androidx.ui.core.WithConstraints
 import androidx.ui.core.tag
 import androidx.ui.foundation.Box
 import androidx.ui.foundation.Text
@@ -12,7 +10,6 @@ import androidx.ui.graphics.Color
 import androidx.ui.layout.ConstraintLayout
 import androidx.ui.layout.ConstraintSet
 import androidx.ui.layout.size
-import androidx.ui.layout.width
 import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.dp
 import androidx.ui.unit.sp
@@ -47,6 +44,7 @@ fun ConstraintLayoutSample() {
 
 @Composable
 fun HelloWorldConstrained() {
+    // TODO > Replace deprecated [ConstraintSet]
     val helloConstraintSet = ConstraintSet {
         val hello = tag("helloTag")
         val world = tag("worldTag")

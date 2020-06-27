@@ -7,10 +7,13 @@ import androidx.ui.foundation.*
 import androidx.ui.foundation.shape.corner.CircleShape
 import androidx.ui.foundation.shape.corner.RoundedCornerShape
 import androidx.ui.graphics.Color
-import androidx.ui.layout.fillMaxSize
+import androidx.ui.input.TextFieldValue
+import androidx.ui.layout.Spacer
 import androidx.ui.layout.fillMaxWidth
+import androidx.ui.layout.height
 import androidx.ui.layout.padding
 import androidx.ui.material.FilledTextField
+import androidx.ui.material.OutlinedTextField
 import androidx.ui.material.icons.Icons
 import androidx.ui.material.icons.filled.ArrowForward
 import androidx.ui.material.icons.filled.Person
@@ -41,6 +44,8 @@ fun TextFieldSamples() {
     Center {
         SimpleTextField()
         FilledTextFieldSample()
+        Spacer(modifier = Modifier.height(56.dp))
+        OutlineTextFieldSample()
     }
 }
 
@@ -87,5 +92,17 @@ fun FilledTextFieldSample() {
         trailingIcon = { Icon(Icons.Default.ArrowForward) },
         backgroundColor = Color.LightGray,
         textStyle = TextStyle(fontSize = 18.sp, color = Color.DarkGray)
+    )
+}
+
+@Composable
+fun OutlineTextFieldSample() {
+    val (value, onTextChanged) = state { TextFieldValue("") }
+
+    OutlinedTextField(
+        value = value,
+        onValueChange = onTextChanged,
+        label = { Text("Email") },
+        leadingIcon = { Text("@") }
     )
 }

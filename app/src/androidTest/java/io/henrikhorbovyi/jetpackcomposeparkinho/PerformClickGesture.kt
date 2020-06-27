@@ -2,7 +2,9 @@ package io.henrikhorbovyi.jetpackcomposeparkinho
 
 import androidx.compose.state
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.ui.core.Modifier
 import androidx.ui.core.TestTag
+import androidx.ui.core.testTag
 import androidx.ui.material.Checkbox
 import androidx.ui.material.MaterialTheme
 import androidx.ui.material.Surface
@@ -21,18 +23,14 @@ class PerformClickGesture {
         composeTestRule.setContent {
             val selected = state { false }
             /**
-             * Você pode englobar seus composables com o composable
-             * TestTag("suaTag").
-             *
-             * Isso fará com que seu composable seja encontrado
+             * 'testTag("suaTag")' fará com que seu composable seja encontrado
              * de forma facil e direta nos seus testes.
              * */
-            TestTag(tag = "checkBoxTag") {
-                Checkbox(
-                    checked = selected.value,
-                    onCheckedChange = { selected.value = it }
-                )
-            }
+            Checkbox(
+                checked = selected.value,
+                onCheckedChange = { selected.value = it },
+                modifier = Modifier.testTag("checkBoxTag")
+            )
         }
     }
 

@@ -31,7 +31,7 @@ class TopAppBarActivity : SampleActivity() {
 @Composable
 fun SimpleTopAppBarSample() {
     Scaffold(
-        topAppBar = {
+        topBar = {
             TopAppBar(
                 backgroundColor = Color.Red,
                 elevation = 8.dp,

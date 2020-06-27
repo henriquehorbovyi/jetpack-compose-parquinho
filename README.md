@@ -1,4 +1,4 @@
-# ![](https://img.shields.io/badge/Kotlin-1.3.72-green.svg) ![](https://img.shields.io/badge/Compose-dev13-green.svg)
+# ![](https://img.shields.io/badge/Kotlin-1.3.72-green.svg) ![](https://img.shields.io/badge/Compose-dev14-green.svg)
 
 # Jetpack Compose Parkinho
 
@@ -102,8 +102,6 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 - [Verificando Se Composable é Clicavel](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho/AssertHasClickAction.kt)
 
 - [Executando Cliques](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho/PerformClickGesture.kt)
-  
-  
 
 # Outras Referências
 

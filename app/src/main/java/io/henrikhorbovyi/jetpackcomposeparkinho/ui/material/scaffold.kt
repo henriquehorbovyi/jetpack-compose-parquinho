@@ -45,8 +45,8 @@ class ScaffoldActivity : SampleActivity() {
 @Composable
 fun ScaffoldSample() {
     Scaffold(
-        topAppBar = { AwesomeTopAppBar() },
-        bottomAppBar = { AwesomeBottomBar() },
+        topBar = { AwesomeTopAppBar() },
+        bottomBar = { AwesomeBottomBar() },
         drawerContent = { AwesomeDrawerContent() },
         floatingActionButton = { Fab() }
     ) {

@@ -2,6 +2,7 @@ package io.henrikhorbovyi.jetpackcomposeparkinho.data
 
 import androidx.appcompat.app.AppCompatActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.animation.CrossfadeActivity
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.categories.*
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.BoxActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.TextActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.*
@@ -17,6 +18,14 @@ data class Sample(
 )
 
 object Categories {
+    val all = listOf(
+        Sample(name = "Animações", clazz = AnimationsActivity::class),
+        Sample(name = "Fundação", clazz = FoundationActivity::class),
+        Sample(name = "Layouts", clazz = LayoutsActivity::class),
+        Sample(name = "Material", clazz = MaterialActivity::class),
+        Sample(name = "Resources", clazz = ResourcesActivity::class)
+    )
+
     val animations = listOf(
         Sample("CrossFade", clazz = CrossfadeActivity::class)
     )
