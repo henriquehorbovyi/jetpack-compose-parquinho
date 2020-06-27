@@ -38,11 +38,7 @@ class PerformClickGesture {
          * 'checkBoxTag'
          *
          * 2- Clicando no CheckBox
-         *
-         * 3- Verificando se está "ON" (no caso do CheckBox, se está selecionado)
          * */
-        findByTag("checkBoxTag")
-            .doClick()
-            .assertIsOn()
+        findByTag("checkBoxTag").doClick()
     }
 }
