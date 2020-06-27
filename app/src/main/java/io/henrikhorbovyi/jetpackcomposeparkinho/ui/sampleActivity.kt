@@ -9,7 +9,7 @@ import androidx.ui.core.setContent
 import androidx.ui.material.MaterialTheme
 
 
-abstract class SampleActivity() : AppCompatActivity() {
+abstract class SampleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

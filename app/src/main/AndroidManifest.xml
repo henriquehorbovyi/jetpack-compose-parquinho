@@ -9,13 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JetpackComposeParkinho.NoActionBar">
-        <activity android:name=".ui.SamplesActivity">
+        <activity android:name=".ui.CategoriesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- CATEGORIES -->
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.categories.AnimationsActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.categories.FoundationActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.categories.LayoutsActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.categories.MaterialActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.categories.ResourcesActivity"/>
 
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.resources.ColorsActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.resources.DrawablesActivity"/>
@@ -25,6 +32,7 @@
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.BoxActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.TextActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.RowActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ConstraintLayoutActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.StackActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.VerticalScrollerActivity"/>

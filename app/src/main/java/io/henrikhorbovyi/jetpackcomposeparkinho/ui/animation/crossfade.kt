@@ -38,11 +38,7 @@ class CrossfadeActivity : SampleActivity() {
 @Composable
 fun CrossfadeSample() {
 
-    Column(
-        modifier = Modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.SpaceEvenly,
-        horizontalGravity = Alignment.CenterHorizontally
-    ) {
+    Center {
         SimpleTextCrossfade()
         ColorCrossfade()
     }
@@ -60,7 +56,7 @@ fun SimpleTextCrossfade() {
      * A função [Crossfade] vai tomar conta de deixar essa transição
      * entre textos um pouco mais suave :)
      * */
-    Center {
+    Center(modifier = Modifier.height(160.dp)) {
         Crossfade(current = currentString) { text ->
             Text(text, fontSize = 28.sp)
         }
@@ -89,19 +85,17 @@ fun ColorCrossfade() {
         duration = 2000
     }
 
-    Center {
-        Crossfade(current = currentColor, animation = animation) { color ->
-            Box(
-                Modifier.size(120.dp),
-                backgroundColor = color,
-                shape = RoundedCornerShape(8.dp)
-            )
-        }
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        Button(text = { Text("Mudar a cor") }, onClick = {
-            currentColor = if (currentColor == colors[0]) colors[1] else colors[0]
-        })
+    Crossfade(current = currentColor, animation = animation) { color ->
+        Box(
+            Modifier.size(120.dp),
+            backgroundColor = color,
+            shape = RoundedCornerShape(8.dp)
+        )
     }
+
+    Spacer(modifier = Modifier.height(16.dp))
+
+    Button(text = { Text("Mudar a cor") }, onClick = {
+        currentColor = if (currentColor == colors[0]) colors[1] else colors[0]
+    })
 }
