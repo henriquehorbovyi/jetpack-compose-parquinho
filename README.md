@@ -87,7 +87,7 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 - [Top App Bar](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/topAppBar.kt)
 
-## Resources
+## [Resources](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/resources)
 
 - [Color](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/resources/colors.kt)
 
