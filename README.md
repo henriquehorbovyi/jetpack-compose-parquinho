@@ -97,11 +97,13 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 ## [Test](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho)
 
-- [Executando Cliques](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho/PerformClickGesture.kt)
-
-- Click Assertion
-
 - [Encontrando Composables nos Testes](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho/material/FindByTests.kt)
+
+- [Verificando Se Composable é Clicavel](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho/AssertHasClickAction.kt)
+
+- [Executando Cliques](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho/PerformClickGesture.kt)
+  
+  
 
 # Outras Referências
 

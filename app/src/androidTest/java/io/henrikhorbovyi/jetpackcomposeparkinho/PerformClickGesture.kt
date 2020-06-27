@@ -20,6 +20,13 @@ class PerformClickGesture {
     private fun prepareComposable() {
         composeTestRule.setContent {
             val selected = state { false }
+            /**
+             * Você pode englobar seus composables com o composable
+             * TestTag("suaTag").
+             *
+             * Isso fará com que seu composable seja encontrado
+             * de forma facil e direta nos seus testes.
+             * */
             TestTag(tag = "checkBoxTag") {
                 Checkbox(
                     checked = selected.value,
