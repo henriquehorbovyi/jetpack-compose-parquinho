@@ -6,9 +6,7 @@ import androidx.ui.core.TestTag
 import androidx.ui.material.Checkbox
 import androidx.ui.material.MaterialTheme
 import androidx.ui.material.Surface
-import androidx.ui.test.createComposeRule
-import androidx.ui.test.doClick
-import androidx.ui.test.findByTag
+import androidx.ui.test.*
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -19,7 +17,7 @@ class PerformClickGesture {
     @get:Rule
     val composeTestRule = createComposeRule()
 
-    private fun launchContent() {
+    private fun prepareComposable() {
         composeTestRule.setContent {
             val selected = state { false }
             TestTag(tag = "checkBoxTag") {
@@ -33,8 +31,18 @@ class PerformClickGesture {
 
     @Test
     fun clicarNoCheckBox() {
-        launchContent()
-        findByTag("checkBoxTag").doClick()
-    }
+        prepareComposable()
 
+        /**
+         * 1- Encontrando o CheckBox pela "test tag" definida como
+         * 'checkBoxTag'
+         *
+         * 2- Clicando no CheckBox
+         *
+         * 3- Verificando se está "ON" (no caso do CheckBox, se está selecionado)
+         * */
+        findByTag("checkBoxTag")
+            .doClick()
+            .assertIsOn()
+    }
 }

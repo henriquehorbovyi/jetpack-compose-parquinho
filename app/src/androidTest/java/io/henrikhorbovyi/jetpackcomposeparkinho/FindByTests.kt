@@ -22,7 +22,7 @@ class FindByTests {
     }
 
     @Test
-    fun DeveExistirUmBotaoComOTextoPronto() {
+    fun deveExistirUmBotaoComOTextoPronto() {
         prepareComposable()
 
         /**
