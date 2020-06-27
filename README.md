@@ -101,6 +101,8 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 - Click Assertion
 
+- [Find By Tests](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho/material/FindByTests.kt)
+
 # Outras Referências
 
 ## Artigos
