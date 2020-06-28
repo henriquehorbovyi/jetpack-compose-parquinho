@@ -1,6 +1,7 @@
 package io.henrikhorbovyi.jetpackcomposeparkinho.ui.resources
 
 import androidx.compose.Composable
+import androidx.ui.core.ContentScale
 import androidx.ui.core.Modifier
 import androidx.ui.foundation.Image
 import androidx.ui.graphics.Color
@@ -35,7 +36,9 @@ class DrawablesActivity : SampleActivity() {
 fun DrawablesSample() {
     Center {
         Image(
-            asset = vectorResource(id = R.drawable.ic_android).copy(defaultHeight = 64.dp, defaultWidth = 64.dp),
+            modifier = Modifier.size(180.dp),
+            asset = vectorResource(id = R.drawable.ic_android),
+            contentScale = ContentScale.Fit,
             colorFilter = ColorFilter.tint(Color.Red)
         )
     }
