@@ -97,7 +97,7 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 - [String](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/resources/strings.kt)
 
-## [Test](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho)
+## [Testes](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho)
 
 - [Encontrando Composables nos Testes](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho/material/FindByTests.kt)
 
