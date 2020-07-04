@@ -105,6 +105,26 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 - [Executando Cliques](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/app/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho/PerformClickGesture.kt)
 
+
+
+# Contribua :wrench:
+
+Viu alguma coisa que pode ser melhorada ou algo a ser acrescentado? Ótimo, toda contribuição é muito bem-vinda :love_letter:. Veja abaixo como prosseguir:  
+
+
+
+- :memo: abra uma `issue` explicando o que você pretende resolver 
+
+- :speaking_head: vamos falar um pouco sobre o seu ponto
+
+- :fork_and_knife: faça o `fork` do projeto para sua conta do github
+
+- :computer: hora de codificar; ao finalizar, crie seu `pull request` :checkered_flag:
+
+
+
+>  TODO: adicionar `readme` para boas praticas de código
+
 # Outras Referências
 
 ## Artigos
