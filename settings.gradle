@@ -1,2 +1,3 @@
 rootProject.name = "JetpackComposeParkinho"
-include ':componentes', ':aplicativos'
+include ':componentes', ':demo-aplicativos'
+include ':whatsfake'

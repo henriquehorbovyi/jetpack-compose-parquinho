@@ -3,7 +3,7 @@
     package="io.henrikhorbovyi.aplicativos">
 
     <application
-        android:theme="@style/Theme.JetpackComposeParkinho.NoActionBar">
+        android:theme="@style/Theme.Aplicativos.NoActionBar">
         <activity android:name=".AppsActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER"/>

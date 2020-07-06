@@ -1,6 +1,7 @@
 package io.henrikhorbovyi.aplicativos.data
 
 import androidx.appcompat.app.AppCompatActivity
+import io.henrikhorbovyi.whatsfake.WhatsFakeActivity
 import kotlin.reflect.KClass
 
 data class App(
@@ -14,6 +15,6 @@ object Mocks {
     val allApps = listOf(
         App("Todo App"),
         App("Instagram"),
-        App("WhatsApp")
+        App("WhatsApp", WhatsFakeActivity::class)
     )
 }
