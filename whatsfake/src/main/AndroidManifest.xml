@@ -2,8 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.henrikhorbovyi.whatsfake">
 
-    <application>
-        <activity android:name=".WhatsFakeActivity"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_settings">
+        <activity android:name=".ui.WhatsFakeActivity"/>
     </application>
 
 </manifest>
