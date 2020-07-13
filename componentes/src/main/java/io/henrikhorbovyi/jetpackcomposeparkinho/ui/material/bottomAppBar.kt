@@ -35,6 +35,7 @@ class BottomAppBarActivity : ComponentActivity() {
 fun BottomAppBarSample() {
     Scaffold(
         floatingActionButtonPosition = Scaffold.FabPosition.Center,
+        isFloatingActionButtonDocked = true,
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {},
