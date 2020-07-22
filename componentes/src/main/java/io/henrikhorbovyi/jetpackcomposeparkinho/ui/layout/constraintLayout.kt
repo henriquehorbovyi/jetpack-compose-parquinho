@@ -44,38 +44,26 @@ fun ConstraintLayoutSample() {
 
 @Composable
 fun HelloWorldConstrained() {
-    // TODO > Replace deprecated [ConstraintSet]
-    val helloConstraintSet = ConstraintSet {
-        val hello = tag("helloTag")
-        val world = tag("worldTag")
+    ConstraintLayout {
+        val (hello, world) = createRefs()
 
-        hello.apply {
-            top constrainTo parent.top
-            bottom constrainTo parent.bottom
-            right constrainTo world.left
-            left constrainTo parent.left
-        }
-        world.apply {
-            top constrainTo parent.top
-            bottom constrainTo parent.bottom
-            right constrainTo parent.right
-            left constrainTo hello.right
-        }
-    }
-
-    ConstraintLayout(
-        constraintSet = helloConstraintSet,
-        modifier = Modifier.size(150.dp).drawBackground(Color.Yellow)
-    ) {
         Text(
-            "Hello",
-            modifier = Modifier.tag("helloTag"),
-            fontSize = 22.sp
+            "Olá",
+            fontSize = 22.sp,
+            color = Color.Red,
+            modifier = Modifier.constrainAs(hello) {
+                top.linkTo(parent.top)
+                bottom.linkTo(parent.bottom)
+            }
         )
         Text(
-            "World",
-            modifier = Modifier.tag("worldTag"),
-            fontSize = 22.sp
+            "Mundo",
+            fontSize = 22.sp,
+            color = Color.Blue,
+            modifier = Modifier.constrainAs(world) {
+                start.linkTo(hello.end, margin = 16.dp)
+                end.linkTo(parent.end)
+            }
         )
     }
 }
