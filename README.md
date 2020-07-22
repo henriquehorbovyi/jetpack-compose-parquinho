@@ -130,3 +130,4 @@ Viu alguma coisa que pode ser melhorada ou algo a ser acrescentado? Ótimo, toda
 ## Vídeos
 
 - [Jetpack Compose Tutorial - O Toolkit UI Android Moderno](https://www.youtube.com/watch?v=ueqVGkMMhIY) **por [tiago-aguiar](https://github.com/tiago-aguiar)**
+- [GDG Curitiba - #5 Meetup Online: Jetpack Compose: a nova forma de implementar UI no Android](https://www.youtube.com/watch?v=qPS8EVzhgPY&t=3177s) por **[nglauber](https://github.com/nglauber)**
