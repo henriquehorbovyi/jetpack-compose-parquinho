@@ -19,7 +19,7 @@ private val LightThemeColors = lightColorPalette(
 @Composable
 fun WhatsFakeTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    content: @Composable() () -> Unit
+    content: @Composable () -> Unit
 ) {
     MaterialTheme (
         colors = LightThemeColors,

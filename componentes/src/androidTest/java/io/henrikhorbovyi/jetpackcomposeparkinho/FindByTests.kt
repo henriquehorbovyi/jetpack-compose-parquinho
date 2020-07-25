@@ -32,6 +32,6 @@ class FindByTests {
          * Tente trocar "assertIsDisplayed()" por "assertIsNotDisplayed()"
          * para quebrar o teste, confirmando que o botão esta sendo mostrado
          * */
-        findByText("Pronto").assertIsDisplayed()
+        onNodeWithText("Pronto").assertIsDisplayed()
     }
 }

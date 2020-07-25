@@ -7,6 +7,7 @@ import androidx.ui.foundation.clickable
 import androidx.ui.test.assertHasClickAction
 import androidx.ui.test.createComposeRule
 import androidx.ui.test.findByTag
+import androidx.ui.test.onNodeWithTag
 import org.junit.Rule
 import org.junit.Test
 
@@ -45,7 +46,7 @@ class AssertHasClickAction {
          * Vamos encontrar o nosso composable pela "tag"
          * definida como 'meuComposable' (poderia ser qualquer texto)
          * */
-        val composableEncontrado = findByTag("meuComposable")
+        val composableEncontrado = onNodeWithTag("meuComposable")
 
         /**
          * Vamos verificar se esse composable tem uma ação de clique

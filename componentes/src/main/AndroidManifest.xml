@@ -35,8 +35,8 @@
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ConstraintLayoutActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ColumnActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.StackActivity"/>
-        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.VerticalScrollerActivity"/>
-        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.HorizontalScrollerActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ScrollableColumnActivity"/>
+        <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.layout.ScrollableRowActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.AlertDialogActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.BottomAppBarActivity"/>
         <activity android:name="io.henrikhorbovyi.jetpackcomposeparkinho.ui.material.BottomNavigationActivity"/>

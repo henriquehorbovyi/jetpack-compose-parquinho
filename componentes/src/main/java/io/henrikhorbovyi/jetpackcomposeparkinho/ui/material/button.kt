@@ -48,9 +48,9 @@ fun ButtonSamples(toastCallBack: (String) -> Unit = {}) {
          * Note que o atributo [text] assim como no botão anterior está sendo preenchido,
          * porém dentro do corpo da própria função Button.
          * */
-        OutlinedButton(onClick = { toastCallBack("Outline") }, text = { Text("Detalhes") })
+        OutlinedButton(onClick = { toastCallBack("Outline") }, content = { Text("Detalhes") })
 
-        TextButton(onClick = { toastCallBack("TextButton") }, text = { Text("CONFIRMAR") })
+        TextButton(onClick = { toastCallBack("TextButton") }, content = { Text("CONFIRMAR") })
 
         IconButton(onClick = { toastCallBack("IconButton") }, icon = { Icon(asset = Icons.Default.Send) })
 

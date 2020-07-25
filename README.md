@@ -1,4 +1,4 @@
-# ![](https://img.shields.io/badge/Kotlin-1.3.72-green.svg) ![](https://img.shields.io/badge/Compose-dev14-green.svg)
+# ![](https://img.shields.io/badge/Kotlin-1.4-green.svg) ![](https://img.shields.io/badge/Compose-dev15-green.svg)
 
 # Jetpack Compose Parkinho
 
@@ -14,17 +14,36 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 2. Ao criar um novo projeto, selecione `Compose Activity`  
 
-3. **Bonus**: Para utilizar as versões acima da `0.1.0-dev10` é preciso colar o seguinte trecho de código no seu `build.gradle (do modulo app)`
+3. Para usar a ultima versão verifique se o seu  `build.gradle` do modulo app tem as seguintes configurações:
    
    ```groovy
-   buildFeatures {
-       compose true
+   android {
+   
+       // [...]
+   
+       compileOptions {
+           sourceCompatibility JavaVersion.VERSION_1_8
+           targetCompatibility JavaVersion.VERSION_1_8
+       }
+       
+       buildFeatures {
+           compose true
+       }
+       
+       composeOptions {
+           kotlinCompilerVersion "1.4.0-dev-withExperimentalGoogleExtensions-20200720"
+           kotlinCompilerExtensionVersion "0.1.0-dev15"
+       }
    }
    
-   composeOptions {
-       kotlinCompilerVersion "1.3.70-dev-withExperimentalGoogleExtensions-20200424"
-       kotlinCompilerExtensionVersion composeVersion // para versões >= '0.1.0-dev10' 
+   tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+       kotlinOptions {
+           jvmTarget = "1.8"
+           freeCompilerArgs += ["-Xallow-jvm-ir-dependencies", "-Xskip-prerelease-check"]
+       }
    }
+   
+   // [...]
    ```
 
 # Componentes
@@ -51,9 +70,9 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 - [Stack](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout/stack.kt)
 
-- [HorizontalScroller](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout/horizontalScroller.kt)
+- [Scrollable Row](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout/scrollableRow.kt)
 
-- [VerticalScroller](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout/verticalScroller.kt)
+- [Scrollable Column](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout/scrollableColumn.kt)
 
 ## [Material](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material)
 

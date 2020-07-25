@@ -58,7 +58,7 @@ fun SimpleCustomRadioButton() {
     Row(Modifier.fillMaxWidth().padding(8.dp)) {
         RadioButton(
             selected = selectedOption.value == options[0],
-            onSelect = { selectedOption.value = options[0] }
+            onClick = { selectedOption.value = options[0] }
         )
         Text(
             text = options[0],
@@ -67,7 +67,7 @@ fun SimpleCustomRadioButton() {
 
         RadioButton(
             selected = selectedOption.value == options[1],
-            onSelect = { selectedOption.value = options[1] }
+            onClick = { selectedOption.value = options[1] }
         )
         Text(
             text = options[1],

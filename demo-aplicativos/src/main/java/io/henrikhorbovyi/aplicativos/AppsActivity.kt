@@ -3,17 +3,11 @@ package io.henrikhorbovyi.aplicativos
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.Composable
-import androidx.compose.launchInComposition
-import androidx.ui.core.Modifier
 import androidx.ui.core.setContent
-import androidx.ui.foundation.Text
 import androidx.ui.foundation.lazy.LazyColumnItems
 import androidx.ui.layout.Column
-import androidx.ui.layout.padding
 import androidx.ui.material.ListItem
 import androidx.ui.material.MaterialTheme
-import androidx.ui.unit.dp
-import androidx.ui.unit.sp
 import io.henrikhorbovyi.aplicativos.data.App
 import io.henrikhorbovyi.aplicativos.data.Mocks
 

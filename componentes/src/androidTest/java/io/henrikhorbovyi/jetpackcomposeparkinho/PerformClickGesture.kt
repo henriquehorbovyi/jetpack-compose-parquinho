@@ -3,11 +3,8 @@ package io.henrikhorbovyi.jetpackcomposeparkinho
 import androidx.compose.state
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.ui.core.Modifier
-import androidx.ui.core.TestTag
 import androidx.ui.core.testTag
 import androidx.ui.material.Checkbox
-import androidx.ui.material.MaterialTheme
-import androidx.ui.material.Surface
 import androidx.ui.test.*
 import org.junit.Rule
 import org.junit.Test
@@ -44,6 +41,6 @@ class PerformClickGesture {
          *
          * 2- Clicando no CheckBox
          * */
-        findByTag("checkBoxTag").doClick()
+        onNodeWithTag("checkBoxTag").performClick()
     }
 }

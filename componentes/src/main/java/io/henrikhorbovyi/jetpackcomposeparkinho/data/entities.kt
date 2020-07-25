@@ -38,8 +38,8 @@ object Categories {
         Component("Row", RowActivity::class),
         Component("ConstraintLayout", ConstraintLayoutActivity::class),
         Component("Stack", StackActivity::class),
-        Component("Vertical Scroller", VerticalScrollerActivity::class),
-        Component("Horizontal Scroller", HorizontalScrollerActivity::class)
+        Component("Scrollable Column", ScrollableColumnActivity::class),
+        Component("Scrollable Row", ScrollableRowActivity::class)
     )
     val material = listOf(
         Component("AlertDialog", AlertDialogActivity::class),

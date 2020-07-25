@@ -1,7 +1,6 @@
 package io.henrikhorbovyi.jetpackcomposeparkinho.ui.animation
 
-import androidx.animation.AnimationBuilder
-import androidx.animation.TweenBuilder
+import androidx.animation.tween
 import androidx.compose.Composable
 import androidx.compose.getValue
 import androidx.compose.setValue
@@ -61,7 +60,7 @@ fun SimpleTextCrossfade() {
         }
         Spacer(modifier = Modifier.height(16.dp))
         Button(
-            text = { Text("Animar") },
+            content = { Text("Animar") },
             onClick = {
                 currentString = if (currentString == greetings[0]) greetings[1] else greetings[0]
             }
@@ -75,14 +74,12 @@ fun ColorCrossfade() {
     var currentColor by state { colors[0] }
 
     /**
-     * Podemos passar um [AnimationBuilder] para a função Crossfade,
-     * nesse caso estou provendo um [TweenBuilder] e estou alterando a
+     * Podemos passar um [androidx.animation.AnimationSpec] para a função Crossfade,
+     * nesse caso estou provendo um [tween] e estou alterando a
      * propriedade [duration] para 2000 milissegundos, essa será
      * a duração da nossa transição de cores.
      * */
-    val animation = TweenBuilder<Float>().apply {
-        duration = 2000
-    }
+    val animation = tween<Float>(durationMillis = 2000)
 
     Crossfade(current = currentColor, animation = animation) { color ->
         Box(
@@ -94,7 +91,7 @@ fun ColorCrossfade() {
 
     Spacer(modifier = Modifier.height(16.dp))
 
-    Button(text = { Text("Mudar a cor") }, onClick = {
+    Button(content = { Text("Mudar a cor") }, onClick = {
         currentColor = if (currentColor == colors[0]) colors[1] else colors[0]
     })
 }

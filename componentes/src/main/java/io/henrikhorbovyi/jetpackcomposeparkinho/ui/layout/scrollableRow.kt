@@ -12,29 +12,29 @@ import androidx.ui.unit.dp
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.Center
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.ComponentActivity
 
-class HorizontalScrollerActivity : ComponentActivity() {
+class ScrollableRowActivity : ComponentActivity() {
 
     @Composable
     override fun ComponentExample() {
-        HorizontalScrollerSamples()
+        ScrollableRowSamples()
     }
 
     @Composable
-    @Preview("horizontalScrollerPreview", showDecoration = true)
+    @Preview("scrollableRowPreview", showDecoration = true)
     override fun preview() {
-        HorizontalScrollerSamples()
+        ScrollableRowSamples()
     }
 }
 
 @Composable
-fun HorizontalScrollerSamples() {
+fun ScrollableRowSamples() {
     Center {
         Center(
             Modifier.size(200.dp).drawBackground(Color.Black)
         ) {
             Text("Role as cores", color = Color.White)
             Spacer(modifier = Modifier.height(16.dp))
-            HorizontalScroller {
+            ScrollableRow {
                 Box(backgroundColor = Color.Yellow, modifier = Modifier.size(64.dp))
                 Box(backgroundColor = Color.Green, modifier = Modifier.size(64.dp))
                 Box(backgroundColor = Color.Blue, modifier = Modifier.size(64.dp))
