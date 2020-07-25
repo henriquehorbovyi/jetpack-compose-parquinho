@@ -1,6 +1,7 @@
 package io.henrikhorbovyi.jetpackcomposeparkinho.data
 
 import androidx.appcompat.app.AppCompatActivity
+import io.henrikhorbovyi.jetpackcomposeparkinho.ui.animation.AnimatedValuesActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.animation.CrossfadeActivity
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.categories.*
 import io.henrikhorbovyi.jetpackcomposeparkinho.ui.foundation.BoxActivity
@@ -27,6 +28,7 @@ object Categories {
     )
 
     val animations = listOf(
+        Component("Valores Animados", clazz = AnimatedValuesActivity::class),
         Component("CrossFade", clazz = CrossfadeActivity::class)
     )
     val foundation = listOf(

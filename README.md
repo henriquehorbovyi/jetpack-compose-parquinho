@@ -25,11 +25,11 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
            sourceCompatibility JavaVersion.VERSION_1_8
            targetCompatibility JavaVersion.VERSION_1_8
        }
-       
+   
        buildFeatures {
            compose true
        }
-       
+   
        composeOptions {
            kotlinCompilerVersion "1.4.0-dev-withExperimentalGoogleExtensions-20200720"
            kotlinCompilerExtensionVersion "0.1.0-dev15"
@@ -52,7 +52,7 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 - [Crossfade](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/animation/crossfade.kt)
 
-- Valores Animados 
+- [Valores Animados](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/animation/animatedValues.kt) 
 
 ## [Fundação](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/foundation)
 
