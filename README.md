@@ -14,115 +14,112 @@ O objetivo do **Parkinho** é criar uma documentação sobre o [Jetpack Compose]
 
 2. Ao criar um novo projeto, selecione `Compose Activity`  
 
-3. Para usar a ultima versão verifique se o seu  `build.gradle` do modulo app tem as seguintes configurações:
+3. Para usar a ultima versão verifique se o seu  `build.gradle.kts` do modulo app tem as seguintes configurações:
    
-   ```groovy
+   ```kotlin
    android {
-   
-       // [...]
-   
+       // [...] 
+       
        compileOptions {
-           sourceCompatibility JavaVersion.VERSION_1_8
-           targetCompatibility JavaVersion.VERSION_1_8
+           sourceCompatibility = JavaVersion.VERSION_1_8
+           targetCompatibility = JavaVersion.VERSION_1_8
        }
-   
-       buildFeatures {
-           compose true
-       }
-   
-       composeOptions {
-           kotlinCompilerVersion "1.4.0-dev-withExperimentalGoogleExtensions-20200720"
-           kotlinCompilerExtensionVersion "0.1.0-dev15"
-       }
-   }
-   
-   tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
        kotlinOptions {
            jvmTarget = "1.8"
-           freeCompilerArgs += ["-Xallow-jvm-ir-dependencies", "-Xskip-prerelease-check"]
+       }
+       buildFeatures {
+           compose = true
+       }
+       composeOptions {
+           kotlinCompilerExtensionVersion = "1.4.3" // essa versão pode variar
+       }
+       packaging {
+           resources {
+               excludes += "/META-INF/{AL2.0,LGPL2.1}"
+           }
        }
    }
-   
+
    // [...]
    ```
 
 # Componentes
 
-## [Animações](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/animation)
+## [Animações](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/tree/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/animation)
 
-- [Crossfade](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/animation/crossfade.kt)
+- [Crossfade](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/tree/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/animation/crossfade.kt)
 
-- [Valores Animados](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/animation/animatedValues.kt) 
+- [Valores Animados](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/tree/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/animation/animatedValues.kt) 
 
-## [Fundação](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/foundation)
+## [Fundação](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/tree/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/foundation)
 
-- [Text](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/foundation/text.kt)
+- [Text](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/foundation/text.kt)
 
-- [Box](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/foundation/box.kt)
+- [Box](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/foundation/box.kt)
 
-## [Layout](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout)
+## [Layout](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/tree/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/layout)
 
-- [Constraint Layout](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout/constraintLayout.kt)
+- [Constraint Layout](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/layout/constraintLayout.kt)
 
-- [Column](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout/column.kt)
+- [Column](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/layout/column.kt)
 
-- [Row](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout/row.kt)
+- [Row](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/layout/row.kt)
 
-- [Stack](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout/stack.kt)
+- [Stack](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/layout/stack.kt)
 
-- [Scrollable Row](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout/scrollableRow.kt)
+- [Scrollable Row](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/layout/scrollableRow.kt)
 
-- [Scrollable Column](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/layout/scrollableColumn.kt)
+- [Scrollable Column](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/layout/scrollableColumn.kt)
 
-## [Material](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material)
+## [Material](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/tree/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material)
 
-- [AlertDialog](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/alertDialog.kt)
+- [AlertDialog](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/alertDialog.kt)
 
-- [Bottom App Bar](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/bottomAppBar.kt)
+- [Bottom App Bar](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/bottomAppBar.kt)
 
-- [Bottom Navigation](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/bottomNavigation.kt)
+- [Bottom Navigation](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/bottomNavigation.kt)
 
-- [Button](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/button.kt)
+- [Button](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/button.kt)
 
-- [Card](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/card.kt)
+- [Card](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/card.kt)
 
-- [Checkbox](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/checkBox.kt)
+- [Checkbox](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/checkBox.kt)
 
-- [Divider](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/divider.kt)
+- [Divider](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/divider.kt)
 
-- [Floating Action Button](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/floatingActionButton.kt)
+- [Floating Action Button](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/floatingActionButton.kt)
 
-- [Progress](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/progress.kt)
+- [Progress](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/progress.kt)
 
-- [Radio Button](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/radioButton.kt)
+- [Radio Button](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/radioButton.kt)
 
-- [Scaffold](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/scaffold.kt)
+- [Scaffold](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/scaffold.kt)
 
-- [Slider](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/slider.kt)
+- [Slider](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/slider.kt)
 
-- [Snackbar](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/snackbar.kt)
+- [Snackbar](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/snackbar.kt)
 
-- [Switch](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/switch.kt)
+- [Switch](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/switch.kt)
 
-- [TextField](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/textField.kt)
+- [TextField](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/textField.kt)
 
-- [Top App Bar](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/material/topAppBar.kt)
+- [Top App Bar](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/material/topAppBar.kt)
 
-## [Resources](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/resources)
+## [Resources](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/tree/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/resources)
 
-- [Color](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/resources/colors.kt)
+- [Color](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/resources/colors.kt)
 
-- [Drawable](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/resources/drawables.kt)
+- [Drawable](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/resources/drawables.kt)
 
-- [String](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/main/java/io/henrikhorbovyi/jetpackcomposeparkinho/ui/resources/strings.kt)
+- [String](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/main/java/io/henriquehorbovyi/jetpackcomposeparquinho/ui/resources/strings.kt)
 
-## [Testes](https://github.com/henrikhorbovyi/JetpackComposeParkinho/tree/master/componentes/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho)
+## [Testes](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/tree/master/componentes/src/androidTest/java/io/henriquehorbovyi/jetpackcomposeparquinho)
 
-- [Encontrando Composables nos Testes](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho/material/FindByTests.kt)
+- [Encontrando Composables nos Testes](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/androidTest/java/io/henriquehorbovyi/jetpackcomposeparquinho/material/FindByTests.kt)
 
-- [Verificando Se Composable é Clicavel](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho/AssertHasClickAction.kt)
+- [Verificando Se Composable é Clicavel](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/androidTest/java/io/henriquehorbovyi/jetpackcomposeparquinho/AssertHasClickAction.kt)
 
-- [Executando Cliques](https://github.com/henrikhorbovyi/JetpackComposeParkinho/blob/master/componentes/src/androidTest/java/io/henrikhorbovyi/jetpackcomposeparkinho/PerformClickGesture.kt)
+- [Executando Cliques](https://github.com/henriquehorbovyi/jetpackcomposeparquinho/blob/master/componentes/src/androidTest/java/io/henriquehorbovyi/jetpackcomposeparquinho/PerformClickGesture.kt)
 
 # Contribua :wrench:
 
